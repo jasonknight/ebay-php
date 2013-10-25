@@ -67,5 +67,12 @@
       } ?>
     </ShippingDetails>
     <DispatchTimeMax><?= $this->DispatchTimeMax?></DispatchTimeMax>
+    <ReturnPolicy>
+      <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+      <RefundOption>MoneyBack</RefundOption>
+      <ReturnsWithinOption>Days_30</ReturnsWithinOption>
+      <Description>You may return items still in pristine, un-opened condition.</Description>
+      <ShippingCostPaidByOption>Buyer</ShippingCostPaidByOption>
+    </ReturnPolicy>
   </Item> 
 </AddItemRequest> 
