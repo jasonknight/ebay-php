@@ -69,5 +69,5 @@
     }
   }
   $item->InternationalShippingServiceOptions = $InternationalShippingServiceOptions;
-
+  echo "Item built.\n";
 ?>
