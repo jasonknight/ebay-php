@@ -25,7 +25,7 @@
   
   $item->Site = 'UK';
   
-  $item->PaymentMethods = array('PayPal');
+  $item->PaymentMethods = array('PayPal','PersonalCheck','MoneyXferAcceptedInCheckout');
   $item->PayPalEmailAddress = 'ebay@philatelic.co.uk';
   $item->PictureDetails = array("$picURL/" . $product->image_number . ".jpg");
   
