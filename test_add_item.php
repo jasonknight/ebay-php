@@ -12,6 +12,9 @@
   $item->Currency = 'GBP';
   $item->ListingType = 'FixedPriceItem';
   $item->Quantity = $product->count_on_hand;
+  if ( intval($item->Quantity) <= 0 ) {
+    $item->Quantity = 1;
+  }
   echo "SETTING ITEM PRICE TO: {$product->price}\n";
   $item->StartPrice = $product->price;
   $item->Country = 'GB';
@@ -25,7 +28,7 @@
   
   $item->Site = 'UK';
   
-  $item->PaymentMethods = array('PayPal','PersonalCheck','MoneyXferAcceptedInCheckout');
+  $item->PaymentMethods = array('PayPal','PersonalCheck','MoneyXferAccepted');
   $item->PayPalEmailAddress = 'ebay@philatelic.co.uk';
   $item->PictureDetails = array("$picURL/" . $product->image_number . ".jpg");
   
